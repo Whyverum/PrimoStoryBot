@@ -1,0 +1,19 @@
+[project]
+name = "primostorybot"
+version = "1.4"
+description = "Бот для отправки постов с кнопками и разметкой сообщений"
+authors = [
+    {name = "Verum",email = "sergeyzavalin@outlook.com"}
+]
+license = {text = "None"}
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "aiogram (>=3.20.0.post0,<4.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "dotenv (>=0.9.9,<0.10.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

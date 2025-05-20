@@ -1,0 +1,36 @@
+# .dockerignore: Исключения для Docker сборки
+# Игнорировать всё, кроме необходимого для production
+
+**/.git
+**/.gitignore
+**/.dockerignore
+**/Dockerfile
+**/README.md
+
+# Директории
+**/__pycache__
+**/.mypy_cache
+**/.pytest_cache
+**/.idea
+**/.vscode
+**/test
+**/tests
+**/docs
+**/examples
+
+# Файлы
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.egg-info
+**/*.log
+**/*.logs
+**/*.sqlite
+**/*.db
+config/.env
+**/docker-compose*
+
+# Артефакты сборки
+**/build
+**/dist
+**/node_modules
