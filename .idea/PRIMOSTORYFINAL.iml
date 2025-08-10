@@ -6,9 +6,19 @@
       <sourceFolder url="file://$MODULE_DIR$/BotCode/handlers/commands" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BotCode/loggers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BotCode/utils" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bot" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/configs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/middleware" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (PRIMOSTORYFINAL)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 (PrimoStoryBot)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/locales" />
+      </list>
+    </option>
   </component>
 </module>

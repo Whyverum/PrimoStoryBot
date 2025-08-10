@@ -3,8 +3,8 @@
 
 ### Python ###
 # Виртуальные окружения и настройки
-config/.env
-../../../../Desktop/PostBot/.venv
+configs/.env
+.venv
 venv/
 env/
 ENV/
@@ -65,3 +65,4 @@ htmlcov/
 .nox/
 .pytest_cache/
 .mypy_cache/
+/.env

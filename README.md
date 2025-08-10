@@ -1,31 +1,47 @@
-# Создание поста
-new_post = {
-    "id": "cat_post",
-    "author_id": 123,
-    "mod": "HTML",
-    "type": "photo",
-    "text": "Мой котик!",
-    "media": "cat.jpg",
-    "private": True,
-    "allowed_users": [456, 789],
-    "buttons": [[{
-        "type": "share",
-        "name": "Поделиться",
-        "params": {"message": "Посмотрите этого котика!"}
-    }]]
-}
-
-post_id = storage.create_post(new_post)
-
-# Получение поста
-post = storage.get_post(post_id, user_id=456)  # Доступ разрешен
-post = storage.get_post(post_id, user_id=000)  # Доступ запрещен
-
-# Поиск постов
-results = storage.search_posts("котик", user_id=456)
-
-# Обновление поста
-storage.update_post(post_id, updater_id=123, updates={"text": "Новый текст"})
-
-# Удаление поста
-storage.delete_post(post_id, deleter_id=123)
+PROJECT/
+├── config/
+│   ├── __init__.py
+│   ├── settings.py       # Основные настройки
+│   └── roles_config.py   # Конфиг ролей и прав
+├── data/
+│   ├── database.db       # SQLite база (или папка для миграций если PostgreSQL)
+│   ├── lists/            # JSON/CSV файлы списков (игроков, персонажей и т.д.)
+│   └── templates/        # Шаблоны сообщений
+├── handlers/
+│   ├── __init__.py
+│   ├── private/          # Обработчики ЛС
+│   │   ├── commands.py
+│   │   ├── faq.py
+│   │   ├── reports.py
+│   │   └── notifications.py
+│   ├── groups/           # Обработчики групповых чатов
+│   │   ├── flood.py
+│   │   ├── roleplay.py
+│   │   └── moderation.py
+│   └── channels/         # Обработчики каналов
+│       ├── info_updater.py
+│       └── life_news.py
+├── middlewares/
+│   ├── __init__.py
+│   ├── throttling.py     # Анти-спам
+│   ├── database.py       # Интеграция БД
+│   └── mode_switcher.py  # Переключение режимов
+├── services/
+│   ├── __init__.py
+│   ├── database.py       # CRUD операции
+│   ├── stats.py          # Статистика сообщений
+│   ├── list_manager.py   # Управление списками
+│   ├── notifier.py       # Уведомления
+│   └── antispam.py       # Система спам-фильтрации
+├── utils/
+│   ├── __init__.py
+│   ├── parsers.py        # Парсинг сообщений
+│   ├── keyboards.py      # Генерация клавиатур
+│   └── helpers.py        # Вспомогательные функции
+├── states/               # FSM состояния
+│   ├── __init__.py
+│   ├── user_registration.py
+│   └── report_states.py
+├── .env                  # Переменные окружения
+├── requirements.txt      # Зависимости
+└── main.py               # Точка входа

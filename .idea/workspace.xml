@@ -5,40 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="976a6336-6952-45ae-989f-7b10c5e394d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PRIMOSTORYFINAL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/core/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/callback.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/commands/start_cmd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/inline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/post/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/post/create_posts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/handlers/post/post_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/loggers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/loggers/logs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/utils/md2_escape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/utils/pagination.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BotCode/utils/usernames.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/start.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postsOLD/posts_6751720805.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/bots.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/handlers/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/handlers/commands/help.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/handlers/commands/start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/handlers/post/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/handlers/post/create_posts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/keyboards/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/keyboards/inline/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/keyboards/inline/decision.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/keyboards/reply/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/templates/message_callback.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/utils/interesting_facts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/utils/pagination.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs/cmd_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env_example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/loggers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/loggers/logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/core/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/core/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/handlers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/handlers/callback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/commands/start_cmd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/inline.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/handlers/inline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/post/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/post/create_posts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/handlers/post/post_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/handlers/post/post_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/loggers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/loggers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/loggers/logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/loggers/logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/utils/md2_escape.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/utils/md2_escape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/utils/pagination.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BotCode/utils/usernames.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/utils/usernames.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/start.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/start.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/posts_6751720805.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +72,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Whyverum"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Whyverum/PrimoStoryBot.git",
+    "accountId": "352bed01-4b87-43a7-83c1-cb6af2ca3770"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2xL1onhKjANEmVgLSfNYMKmFWc4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -68,6 +97,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -94,8 +124,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (PrimoStoryBot)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -117,8 +148,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.122" />
-        <option value="bundled-python-sdk-880ecab49056-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.122" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.90" />
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
       </set>
     </attachedChunks>
   </component>
@@ -130,6 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747702717100</updated>
       <workItem from="1747702718164" duration="4191000" />
+      <workItem from="1754837986649" duration="1081000" />
     </task>
     <servers />
   </component>
@@ -138,5 +170,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PRIMOSTORYFINAL$main.coverage" NAME="main Coverage Results" MODIFIED="1747706991539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrimoStoryBot$main.coverage" NAME="main Coverage Results" MODIFIED="1754838961735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

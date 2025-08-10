@@ -1,36 +1,39 @@
-# .dockerignore: Исключения для Docker сборки
-# Игнорировать всё, кроме необходимого для production
+# Исключить скрытые системные каталоги, но не всё подряд
+.git/
+.gitattributes
+.gitignore
 
-**/.git
-**/.gitignore
-**/.dockerignore
-**/Dockerfile
-**/README.md
+# Виртуальные окружения и Python-кэш
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
 
-# Директории
-**/__pycache__
-**/.mypy_cache
-**/.pytest_cache
-**/.idea
-**/.vscode
-**/test
-**/tests
-**/docs
-**/examples
+# IDE-файлы
+.idea/
+.vscode/
 
-# Файлы
-**/*.pyc
-**/*.pyo
-**/*.pyd
-**/*.egg-info
-**/*.log
-**/*.logs
-**/*.sqlite
-**/*.db
-config/.env
-**/docker-compose*
+# Тесты и документация
+tests/
+test/
+docs/
+examples/
 
-# Артефакты сборки
-**/build
-**/dist
-**/node_modules
+# Логи и артефакты сборки
+*.log
+*.logs
+Logs/
+Log/
+dist/
+build/
+
+# Примеры и шаблоны
+env_example
+.env
+
+# Опционально (если не нужны в образе):
+docker-compose.yml
+poetry.lock
+pyproject.toml
+README.md
+LICENSE
