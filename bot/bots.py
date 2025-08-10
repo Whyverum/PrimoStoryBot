@@ -4,7 +4,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import User, ChatAdministratorRights, BotDescription, BotShortDescription
 from aiogram.utils.i18n import ConstI18nMiddleware, I18n
 
-from loggers.logs import loggers
+from middleware.loggers import loggers
 from configs.config import BotSettings, BotEdit, Webhook
 from middleware.loggers import log
 
