@@ -184,10 +184,10 @@ async def view_post_callback(cq: CallbackQuery):
     # Удалить / назад
     rows.append([
         InlineKeyboardButton(text="Удалить❌", callback_data=f"delete_post_{pid}"),
-        InlineKeyboardButton(text="Назад◀️", callback_data="open_post_list")
-    ])
-    rows.append(
-        [InlineKeyboardButton(text="Отправить↪️", switch_inline_query=f"{pid}")])
+        InlineKeyboardButton(text="Отправить↪️", switch_inline_query=f"{pid}")])
+
+    rows.append([InlineKeyboardButton(text="Назад◀️", callback_data="open_post_list")])
+
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=rows)
 
